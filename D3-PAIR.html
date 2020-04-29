@@ -18,14 +18,7 @@
 
         You are implementing a website for a Travel Agency.
         In the page you can add all the destination you'd like to go in the next future!
-          section 1 - class='about'
-          section 2 - class='dealOfWeek'
-          section3 - class='welcomeSummer'
-          sectiom4 - class='dealOfDay'
-          section 5 - class='lastMinute'
-          section 6 - class='testimonial'
-          footer - class= 'contacts'
-
+     
         Ex 1) Implement a navigation bar, connected to all the sections of the page. 
         Ex 2) Add a logo into the navigation bar 
      A   Ex 3) Add a Jumbotron section in which you present name and claim of the tour operator
@@ -112,14 +105,14 @@
     </nav>
   </header>
  <div class="container-fluid"> 
-  <div class="jumbotron img-back">
-    <h1 class="display-4">Destination Anywhere</h1>
-    <p class="lead">World Expeditions has over 40 years of experience operating authentic and unique adventure
+  <div class="jumbotron img-back text-center text-black" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%), url(img/back.jpg)">
+    <h1 class="display-5 mt-5">Destination Anywhere</h1>
+    <p>World Expeditions has over 40 years of experience operating authentic and unique adventure
        holidays with a genuine focus on the paths less travelled. We are the pioneers in designing groundbreaking 
        itineraries and many say our trips start where others end</p>
     <hr class="my-4">
     <p>All aboard, adventure is out there.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg m-5" href="#" role="button">Learn more</a>
   </div>
  </div>
 <section class="weekDeal">
@@ -189,7 +182,7 @@
       </div>
   </div>
     <div class="row specialSummer">
-      <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-2 bora">
         <figure class="figure">
             <img alt="picture" src="https://q-cf.bstatic.com/images/hotel/max1024x768/227/227429708.jpg" class="img">
                 <!-- Play Icon -->
@@ -247,10 +240,7 @@
 </div>
 </section>
 
-<!-- 
-B  Ex 6) Implement a "Deal of the day" section. In this section you'll have:
-- 66% of the page with a picture of the destination
-- 33% with Name, dates, price and a short description -->
+
 <section class="dealOfDay d-sm-none d-lg-block d-md-block">
   <div class="container-md">
     <div class="row">
@@ -360,7 +350,7 @@ B  Ex 6) Implement a "Deal of the day" section. In this section you'll have:
           </blockquote>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 pb-5">
         <div class="text-center"> 
           <img src="img/3.png" alt="..." class="p-4">
           <blockquote class="blockquote">
@@ -375,11 +365,13 @@ B  Ex 6) Implement a "Deal of the day" section. In this section you'll have:
 
 
   <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-    <div class="container text-center">
+    <div class="container">
+      
       <small>Destination Anywhere &copy; powered by Strive.school </small>
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
         Contact us
       </button>
+      <!-- start modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -418,7 +410,7 @@ B  Ex 6) Implement a "Deal of the day" section. In this section you'll have:
                         </div>
                     </div>
                 </form>
-      </div>
+            </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -427,7 +419,9 @@ B  Ex 6) Implement a "Deal of the day" section. In this section you'll have:
           </div>
         </div>
         </div>
+     <!-- end of modal -->
     </div>
+   
   </footer>
   
 
@@ -444,6 +438,23 @@ B  Ex 6) Implement a "Deal of the day" section. In this section you'll have:
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"></script>
       
+   <script>
+    
+     function deleteCards() {
 
+      let items = document.querySelectorAll('.card');
+         for(i = 0; i < items.length; i++) {
+          items[i].remove();
+      }
+     }
+
+     function addBadge () {
+       let badge = document.querySelectorAll('.bora');
+       let text = document.createTextNode("<span class="badge badge-danger">Danger</span>")
+       badge.appendChild(text);
+     }
+   
+    
+   </script>
   </body>
 </html>

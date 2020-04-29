@@ -8,11 +8,12 @@ body {
 .img-back {
     background-image: url('img/back.jpg');
     background-size: cover;
-    width: 100%;
-    opacity: 0.9;
 }
 .space {
     margin: 50px auto;
+}
+.contact-image{
+    text-align: center;
 }
 .contact-image img{
     border-radius: 6rem;
