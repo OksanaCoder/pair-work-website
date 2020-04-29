@@ -1,0 +1,16 @@
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.img {
+        width: 100%;
+        height: 300px;
+    }
+.img-back {
+    background-image: url('img/back.jpg');
+    background-size: cover;
+    width: 100%;
+}
+.space {
+    margin: 50px auto;
+}
+
