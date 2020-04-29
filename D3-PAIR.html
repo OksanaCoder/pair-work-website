@@ -182,9 +182,10 @@
       </div>
   </div>
     <div class="row specialSummer">
-      <div class="col-6 col-sm-6 col-md-4 col-lg-2 bora">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-2">
         <figure class="figure">
-            <img alt="picture" src="https://q-cf.bstatic.com/images/hotel/max1024x768/227/227429708.jpg" class="img">
+          <img src="img/hot.png" class="position-absolute hot-pic">
+            <img alt="picture" src="https://q-cf.bstatic.com/images/hotel/max1024x768/227/227429708.jpg" class="img-welcome">
                 <!-- Play Icon -->
                 <figcaption class="figure-caption">Bora bora</figcaption>
             </figure>
@@ -193,7 +194,8 @@
   
       <div class="col-6 col-sm-6 col-md-4 col-lg-2">
         <figure class="figure">
-            <img alt="picture" src="https://www.kudatouroperator.it/wp-content/uploads/2016/04/Beachcomber_Mauritius_Paradis-1024x683.jpg" class="img">
+          <img src="img/hot.png" class="position-absolute hot-pic">
+            <img alt="picture" src="https://www.kudatouroperator.it/wp-content/uploads/2016/04/Beachcomber_Mauritius_Paradis-1024x683.jpg" class="img-welcome">
                 <!-- Play Icon -->
                 <figcaption class="figure-caption">Mauritius</figcaption>
             </figure>
@@ -202,7 +204,8 @@
  
       <div class="col-6 col-sm-6 col-md-4 col-lg-2">
         <figure class="figure">
-            <img alt="picture" src="https://www.ateams.de/typo3temp/_processed_/7/9/csm_sardinien_1_1373e9ee24.jpg" class="img">
+          <img src="img/hot.png" class="position-absolute hot-pic">
+            <img alt="picture" src="https://www.ateams.de/typo3temp/_processed_/7/9/csm_sardinien_1_1373e9ee24.jpg" class="img-welcome">
                 <!-- Play Icon -->
                 <figcaption class="figure-caption">Sardinia</figcaption>
             </figure>
@@ -211,7 +214,8 @@
    
       <div class="col-6 col-sm-6 col-md-4 col-lg-2">
         <figure class="figure">
-            <img alt="picture" src="https://cdn.corsiperbarman.it/wp-content/uploads/2018/07/lavorare_a_miami.jpg" class="img">
+          <img src="img/hot.png" class="position-absolute hot-pic">
+            <img alt="picture" src="https://cdn.corsiperbarman.it/wp-content/uploads/2018/07/lavorare_a_miami.jpg" class="img-welcome">
                 <!-- Play Icon -->
                 <figcaption class="figure-caption">Miami</figcaption>
             </figure>
@@ -221,7 +225,8 @@
   
     <div class="col-6 col-sm-6 col-md-4 col-lg-2">
       <figure class="figure">
-          <img alt="picture" src="https://static.wixstatic.com/media/40cfa4_7c4be5b010d84cbab23b9a4cb45e71da.jpg" class="img">
+        <img src="img/hot.png" class="position-absolute hot-pic">
+          <img alt="picture" src="https://static.wixstatic.com/media/40cfa4_7c4be5b010d84cbab23b9a4cb45e71da.jpg" class="img-welcome">
               <!-- Play Icon -->
               <figcaption class="figure-caption">Madagascar</figcaption>
           </figure>
@@ -230,7 +235,8 @@
 
     <div class="col-6 col-sm-6 col-md-4 col-lg-2">
       <figure class="figure">
-          <img alt="picture" src="https://www.businessdestinations.com/wp-content/uploads/2019/07/Seychelles.jpg" class="img">
+        <img src="img/hot.png" class="position-absolute hot-pic">
+          <img alt="picture" src="https://www.businessdestinations.com/wp-content/uploads/2019/07/Seychelles.jpg" class="img-welcome">
               <!-- Play Icon -->
               <figcaption class="figure-caption">Seychelles</figcaption>
           </figure>
@@ -448,11 +454,13 @@
       }
      }
 
-     function addBadge () {
-       let badge = document.querySelectorAll('.bora');
-       let text = document.createTextNode("<span class="badge badge-danger">Danger</span>")
-       badge.appendChild(text);
-     }
+
+    function addBadge(){
+      let badges = document.querySelectorAll('.hot-pic');
+      for (i=0; i< badges.length; i++){
+        badges[i].style.display ='block';
+      }
+    }
    
     
    </script>

@@ -6,9 +6,30 @@ body {
         height: 300px;
     }
 .img-back {
-    background-image: url('img/back.jpg');
+    /* background-image: url('img/back.jpg'); */
     background-size: cover;
 }
+.hot-pic {
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.img-welcome {
+    width: 100%;
+}
+
+.space {
+    margin: 50px auto;
+}
+.contact-image{
+.space {
+    margin: 50px auto;
+}
+.contact-image{
+.space {
+    margin: 50px auto;
+}
+.contact-image{
 .space {
     margin: 50px auto;
 }
