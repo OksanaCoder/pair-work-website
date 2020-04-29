@@ -226,7 +226,7 @@
    
  
   
-    <div class="col-6 col-sm-12 col-md-4 col-lg-2">
+    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
       <figure class="figure">
           <img alt="picture" src="https://static.wixstatic.com/media/40cfa4_7c4be5b010d84cbab23b9a4cb45e71da.jpg" class="img">
               <!-- Play Icon -->
@@ -235,7 +235,7 @@
    </div>
 
 
-    <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
       <figure class="figure">
           <img alt="picture" src="https://www.businessdestinations.com/wp-content/uploads/2019/07/Seychelles.jpg" class="img">
               <!-- Play Icon -->
@@ -373,53 +373,64 @@ B  Ex 6) Implement a "Deal of the day" section. In this section you'll have:
   </div>
 </section>
 
-<section class="modal">
-  <div class="container-md">
-    <div class="row">
-      <div class="col-12">
-          <div class="text-center space">
-              <h2>Contact us</h2>
-          </div>
-        </div>
-    </div>
-<div class="row">
-  <div class="col-12">
-    <!-- Button trigger modal -->
-   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-     Contant us
-   </button>
- </div>
-</div>
-<!-- Modal -->
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-  </div> -->
-</div>
-</section>
 
   <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center">
       <small>Destination Anywhere &copy; powered by Strive.school </small>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Contact us
+      </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container contact-form">
+                <div class="contact-image">
+                    <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+                </div>
+                <form method="post">
+                    <h3>Drop Us a Message</h3>
+                   <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+      </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+        </div>
     </div>
   </footer>
   
-</section>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -433,17 +444,6 @@ B  Ex 6) Implement a "Deal of the day" section. In this section you'll have:
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"></script>
       
-    <script>
-    window.addEventListener('load' () => {
-    let logo = document.createElement('img');
-    // assign and onload event handler
-    logo.addEventListener('load', (event) => {
-        console.log('The logo has been loaded');
-    });
-    // add logo to the document
-    document.body.appendChild(logo);
-    logo.src = 'logo.png';
-});
-  </script>
+
   </body>
 </html>
